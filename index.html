@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="glass">
+
+            <div class="progresSection">
+                <div class="progressCount">
+                    <span id="sp0">0</span>
+                    <span id="sp1">1</span>
+                    <span id="sp2">2</span>
+                    <span id="sp3">3</span>
+                </div>
+                <div class="progressBar">
+                    <progress id="task" value="3" max="90"></progress>
+                </div>
+            </div>
+
+            <div class="form" id="firstName">
+                <label for="fname"> First Name</label>
+                <input type="text" id="inp"  placeholder="First Name">
+                <button  onclick="FirstNameSave()"> Continue </button>
+            </div>
+
+
+            <div class="form" id="middleName">
+                <label for="fname"> Middle Name</label>
+                <input type="text" id="inp"   placeholder="Middle Name">
+                <div class="btngroup">
+                    <button class="back" onclick="MiddleBack()"> Back</button>
+                    <button class="cont" onclick="MiddleNameSave()"> Continue</button>
+                </div>
+            </div>
+
+            <div class="form" id="lastName">
+                <label for="fname"> Last Name</label>
+                <input type="text" id="inp"   placeholder="Last Name">
+                <div class="btngroup">
+                    <button class="back" onclick="LastBack()"> Back</button>
+                    <button class="cont" onclick="LastNameSave()"> Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
